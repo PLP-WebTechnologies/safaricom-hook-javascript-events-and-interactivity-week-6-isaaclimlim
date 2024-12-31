@@ -29,7 +29,7 @@ h1 {
     font-size: 1.2em;
 }
 
-.heroSection .buttonStarted {
+.buttonStarted {
     background-color: green;
     font-size: 1.2em;
     color: #f2f2f2;
@@ -40,52 +40,76 @@ h1 {
 }
 
 /* Form styling */
-.formValidation {
-    position: relative;
-    max-width: 600px;
-    height: 100%;
+form {
+    width: 600px;
+    height: auto;
     margin: 0 auto;
     padding: 20px;
-    border-radius: 8px;
+    border-radius: 5px;
     background-color: #ffffff;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
-}
-
-.formValidation p {
-    margin-bottom: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     font-size: 1.2em;
 }
 
-.formValidation label {
-    display: block;
-    margin-bottom: 10px;
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-.formValidation input {
+label {
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
     width: 100%;
     padding: 10px;
+    margin-bottom: 15px;
     border-radius: 5px;
-    border: 1px solid #00ff62;
-    transition: border-color 0.3s ease-in-out;
-    font-size: small;
+    border: 1px solid #ff0000;
 }
 
 select {
     width: 100%;
     padding: 10px;
+    margin-bottom: 15px;
     border-radius: 5px;
-    border: 1px solid #144b29;
-    border-style: solid;
-    border-color: #00f65e;
-    transition: border-color 0.3s ease-in-out;
-    font-size: small;
+    border: 1px solid #ff0000;
 }
 
-select:focus {
-    border-color: yellow;
+input[type="checkbox"] {
+    border: 1px solid #ff0000;
+    margin-right: 5px;
+    cursor: pointer;
 }
 
-.formValidation input:focus {
-    border-color: yellow;
+.submit {
+    background-color: green;
+    font-size: 1.2em;
+    color: #f2f2f2;
+    padding: 5px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    border-style: none;
+    margin-top: 15px;
 }
+
+/* Responsive design */
+@media (max-width: 900px) {
+    .hero-section, .heroSection {
+        width: 100%;
+    
+        margin-left: 0px;
+    }
+
+    form {
+        width: 100%;
+    }
+}
+
+
+
+
+
    
