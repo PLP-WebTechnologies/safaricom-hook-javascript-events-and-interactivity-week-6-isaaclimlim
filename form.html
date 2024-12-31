@@ -3,7 +3,79 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Javascript Event & Interactivity</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
-  <body></body>
+  <body>
+    <h1>Welcome To JavaScript Event and Interactivity Course!</h1>
+    <div class="heroSection">
+      <p>
+        In this course, we will learn about JavaScript events and interactivity.
+        We will explore various event types such as click, mouseover, mouseout,
+        keydown, keyup, and more. We will also learn about form validation using
+        JavaScript
+      </p>
+      <button class="buttonStarted">Get Started!</button>
+    </div>
+
+    <form action="" class="formValidation">
+      <p>
+        <label for="name">Name:</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Enter your full name"
+        />
+        <span id="errorMessage" class="nameError"></span>
+      </p>
+
+      <p>
+        <label for="email">Address:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Enter your E-mail Address"
+        />
+        <span id="errorMessage" class="emailError"></span>
+      </p>
+
+      <p>
+        <label for="Password">Password:</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          min="8"
+          pattern="(?=.*[A-Z])(?=.*\d).{8,}"
+        />
+        <span id="errorMessage" class="passwordError"></span>
+      </p>
+
+      <p>
+        <label for="option">How did you knew Us?</label>
+        <select name="socialMedia" id="socialMedia">
+          <option value="">Select</option>
+          <option value="google">Google</option>
+          <option value="facebook">Facebook</option>
+          <option value="twitter">Twitter</option>
+          <option value="instagram">Instagram</option>
+          <option value="linkedin">LinkedIn</option>
+          <option value="other">Other</option>
+        </select>
+        <span id="errorMessage" class="optionError"></span>
+      </p>
+
+      <p class="checkbox">
+        <input type="checkbox" id="agree" name="agree" />
+        <label for="agree">I agree to the above information</label>
+        <span id="errorMessage" class="agreeError"></span>
+      </p>
+
+      <button class="button">Submit</button>
+    </form>
+
+    <script src="script.js"></script>
+  </body>
 </html>
