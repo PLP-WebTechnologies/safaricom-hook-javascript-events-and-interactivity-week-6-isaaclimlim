@@ -18,7 +18,7 @@
       <button class="buttonStarted">Get Started!</button>
     </div>
 
-    <form>
+    <form class="signUp">
       <h2>Sign Up Form</h2>
       <p>
         <label for="name">Name:</label>
@@ -44,20 +44,13 @@
 
       <p>
         <label for="Password">Password:</label>
-        <input
-          type="password"
-          id="password"
-          name="password"
-          min="8"
-          pattern="(?=.*[A-Z])(?=.*\d).{8,}"
-        />
+        <input type="password" id="password" name="password" minlength="8" />
         <span id="errorMessage" class="passwordError"></span>
       </p>
 
       <p>
         <label for="option">How did you knew Us?</label>
         <select name="socialMedia" id="socialMedia">
-          <option value="">Select</option>
           <option value="google">Google</option>
           <option value="facebook">Facebook</option>
           <option value="twitter">Twitter</option>
@@ -76,6 +69,14 @@
 
       <button class="submit">Submit</button>
     </form>
+
+    <div id="successModal" class="modal" style="display: none">
+      <div class="modal-content">
+        <h2>Form Submitted Successfully!</h2>
+        <p>Thank you for signing up. We will get in touch soon!</p>
+        <button id="closeModal">Close</button>
+      </div>
+    </div>
 
     <script src="script.js"></script>
   </body>
